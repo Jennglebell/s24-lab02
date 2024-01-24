@@ -3,7 +3,6 @@ package edu.cmu.cs.cs214.lab02;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.cmu.cs.cs214.lab02.shapes.Rectangle;
 import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
 public class Main {    
