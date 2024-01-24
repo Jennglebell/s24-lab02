@@ -1,19 +1,20 @@
 package edu.cmu.cs.cs214.lab02;
 
+import java.util.List;
+
 import edu.cmu.cs.cs214.lab02.shapes.*;
 
 public class Renderer {
-    public Rectangle rectangle;
+    private List<Shape> shapes;
     
-    Renderer(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    Renderer(List<Shape> shapes) {
+        this.shapes = shapes;
     }
 
     void draw() {
-        double area = rectangle.getArea();
-
-        // assume implementation
-
-        System.out.println("Shape printed\n" + "Its area is " + area);
+        for (Shape shape : shapes) {
+            double area = shape.getArea();
+            System.out.println("Shape printed\n" + "Its area is " + area);
+        }
     }
 }
